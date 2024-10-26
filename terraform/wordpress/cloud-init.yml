@@ -10,7 +10,7 @@ write_files:
         echo:
           images: medhak/http-https-echo
           ports:
-            -80:8888
+            -80:8080
           restart: always
           environment:
 

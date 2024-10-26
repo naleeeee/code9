@@ -22,7 +22,7 @@ write_files:
             - 3306
             - 33060
         wordpress:
-          image: wordpress:latest
+          image: frendica:latest
           volumes:
             - wp_data:/var/www/html
           ports:

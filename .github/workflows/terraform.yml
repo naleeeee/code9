@@ -25,10 +25,10 @@ jobs:
 
     steps:
     - name: Checkout Repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v2
+      uses: hashicorp/setup-terraform@v4
       with:
         terraform_version: "1.9.5"
 
@@ -48,7 +48,7 @@ jobs:
     name: Terraform deploy from ${{ github.ref }}
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/s3-site-using-module'
-
+#
     defaults:
       run:
         working-directory: terraform/s3-site-using-module

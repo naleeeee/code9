@@ -63,6 +63,9 @@ jobs:
       with:
         terraform_version: "1.9.5"
 #
+    - name: Print
+      run: printenv
+
     - name: Terraform Initialization
       run: terraform init
 

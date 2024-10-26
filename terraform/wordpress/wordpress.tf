@@ -30,4 +30,5 @@ resource "aws_instance" "wordpress_ec2_instance" {
   tags = {
     Name = "${local.wordpress_ec2_name}"
   }
+  user_data_replace_on_change = true
 }
